@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Formulário em Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+      body .container{
+          display: flex;
+          border: 10px solid cornflowerblue;
+          border-radius: 10px;
+      }
+  </style>
+  <body>
+      <div class="container">
+      <h1>Formulário com Bootstrap</h1>
+    <form>
+        <div class="form-group">
+            <label class="nome">E-mail</label>
+            <input class="form-control" type="text" id="emailCampo" placeholder="seuemail@seuemail.com">
+        </div>
+
+        <div class="form-group">
+            <label class="senha">Senha</label>
+            <input class="form-control" type="password" id="senhaCampo" placeholder="digite sua senha">
+            <br>
+        </div>
+
+        <div class="form-group">
+        <label for="selectCampo">Onde você atua?</label>
+            <select class="form-control">
+                <option>Front-End</option>
+                <option>Back-End</option>
+                <option>FullStack</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for = areaCampo>Envie sua sugestão:</label>
+            <textarea id="areaCampo" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <p>Qual sua preferencia?</p>
+                <div class="form-check">
+                  <input type="checkbox" id="html" value="html" class="form-check-input">
+                  <label class="form-check-label" for="html">HTML</label>
+               </div>
+
+               <div class="form-check">
+                 <input type="checkbox" id="css" value="css" class="form-check-input">
+                 <label class="form-check-label" for="css">CSS</label>
+               </div>
+
+              <div class="form-check"> <!--o form-check serve para validar o cheackbox-->
+                 <input type="checkbox" id="javascript" value="js" class="form-check-input">
+                 <label class="form-check-label" for="javascript">Javascript</label>
+              </div>
+        </div>
+
+        <!--checkbox em linha-->
+        <div class="form-group">
+            <p>Qual sua preferencia?</p>
+                <div class="form-check form-check-inline">
+                  <input type="checkbox" name="radio" value="html" class="form-check-input">
+                  <label class="form-check-label" for="html">HTML</label>
+               </div>
+
+               <div class="form-check form-check-inline">
+                 <input type="checkbox" name="radio" value="css" class="form-check-input">
+                 <label class="form-check-label for="css">CSS</label>
+               </div>
+
+              <div class="form-check form-check-inline"> <!--o form-check serve para validar o cheackbox-->
+                 <input type="checkbox" name="radio" value="js" class="form-check-input">
+                 <label class="form-check-label" for="javascript">Javascript</label>
+              </div>
+        </div>
+              <!--com check box tipo radio em linha-->
+            <div class="form-group">
+                <p>Qual sua pretensão salarial</p>
+
+                    <div class="form-check form-check-inline">
+                      <input type="radio" name="radio" value="html" class="form-check-input">
+                      <label class="form-check-label" for="html">de R$3.000,00 até R$4.000,00</label>
+                   </div>
+    
+                   <div class="form-check form-check-inline">
+                     <input type="radio" name="radio" value="css" class="form-check-input">
+                     <label class="form-check-label" for="css">de 4.500,00 até R$5.500,00</label>
+                   </div>
+    
+                  <div class="form-check form-check-inline"> <!--o form-check serve para validar o cheackbox-->
+                     <input type="radio" name="radio" value="js" class="form-check-input">
+                     <label class="form-check-label" for="javascript">+ R$6.000,00</label>
+                  </div>
+            </div>  
+          
+            <!--com check box tipo radio em coluna-->
+            <div class="form-group">
+                <p>Qual sua pretensão salarial</p>
+
+                    <div class="form-check">
+                      <input type="radio" id="radio" name="salario" value="html" class="form-check-input">
+                      <label class="form-check-label" for="html">de R$3.000,00 até R$4.000,00</label>
+                   </div>
+                <!--no radio, colocar o mesmo name para todos, pois ai ele ira só selecionar um-->
+                   <div class="form-check">
+                     <input type="radio" id="radio" name="salario" value="css" class="form-check-input">
+                     <label class="form-check-label" for="css">de 4.500,00 até R$5.500,00</label>
+                   </div>
+    
+                  <div class="form-check"> <!--o form-check serve para validar o cheackbox-->
+                     <input type="radio" id="radio" name="salario" value="js" class="form-check-input">
+                     <label class="form-check-label" for="javascript">+ R$6.000,00</label>
+                  </div>
+            </div>  
+
+            <button class="btn btn-primary" type="submit" id="button">enviar📝</button>
+            </form>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

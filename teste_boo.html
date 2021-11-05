@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .meucontainer{
+            background-color: rgb(43, 159, 226);
+            justify-content: center;
+            align-items: center;
+        }
+        .row div{
+            /*background-color: bisque;*/
+            height: 150px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cor1{
+           
+           background-color: #F2F2F2;
+        }
+        .cor2{
+            
+            background-color: #3E768C;
+        }
+        .cor3{
+            
+            background-color: #84D0D9;
+        }
+        .cor4{
+            background-color: #C4D977;
+        }
+        .cor5{
+            
+            background-color:#868C5A ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container meucontainer">
+        <h1 style="text-align: center;">O Que é Bootstrap? Guia para Iniciantes.</h1>
+        <div class="row cor1">
+            <div class="col-lg-12 col-sm-12 cor2">Você é um desenvolvedor front-end e está cansado de escrever sempre as mesmas sintaxes CSS? Essa é a sua deixa para começar a usar o Bootstrap! 
+                <br>Neste artigo, vamos cobrir os benefícios de usar esse framework para web e como fazer para incorporá-lo no seu projeto corretamente.</div>
+            <div class="col-lg-2 col-sm cor3 "> 💻💻💻 </div>
+            <div class="col-lg-2 col-sm- cor3"> Bootstrap.js </div>
+            <div class="col-lg-4 col-sm cor3"> Bootstrap.css </div>
+            <div class="col-lg-2 col-sm cor3"> Glyphicons </div>
+            <div class="col-lg-2 col-sm cor3"> 📱📱📱 </div>   
+        </div>
+        <div class="row cor4">
+            <div class="col-lg-9 col-sm-5 cor"> ✔ O conjunto de sintaxes de tarefas específicas que eles têm permite que os desenvolvedores construam sites muito mais rapidamente porque não é preciso se preocupar com comandos básicos e funções adicionais. 
+
+                <br>✔ Mesmo assim, existia uma falta de consistência devido ao uso demasiado de bibliotecas, o que acabou exigindo uma mudança rígida. O Bootstrap apareceu como a resposta para essa questão.   
+            </div>
+            <div class="col-lg-3 col-sm-7"> os desenvolvedores não precisam se preocupar em fazer muitas versões de um mesmo site para todos os tipos e tamanhos de telas disponíveis. Isso também não faz com que a audiência fique limitada </div>
+        </div>
+        <div class="row cor5">
+            <div class="col-lg-2 col-sm-6"> <img src="programming.png"> </div>
+            <div class="col-lg-10 col-sm-6"> O framework também é muito flexível e pode acomodar quase todas as necessidade do desenvolvimento web front-end. As suas melhores habilidades incluem, mas não se limitam, a funções que permitem que páginas na internet funcionem em telas de qualquer tamanho.  </div>
+        </div> 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
